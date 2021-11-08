@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Theme Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Nanum+Pen+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet"> 
+ 
+
+    <style>
+
+        * {
+            font-family: "Do Hyeon", sans-serif; 
+            font-size: 20px;
+        }
+
+
+        body {
+            position: relative; 
+        }
+
+        .navbar {
+            background-color:skyblue;
+            border : none;
+            color : white !important;
+        }
+
+        .navbar a {
+            color : white !important;
+        }
+
+        .jumbotron {
+            background-color: skyblue;
+            color: white;
+            padding: 200px 50px;
+        }
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        .container-fluid {
+            padding: 100px 20px;
+            text-align: center;
+        }       
+        .logo {
+            float : right;
+            color : #C2EAF3;
+            font-size : 200px;
+        }
+        .logo-small {
+            color :#C2EAF3;
+            font-size : 50px;
+        }
+        @media screen and (max-width:768px) {
+            .col-sm-4{
+                text-align: Center;
+                padding : 25px 0;
+            }
+        }
+        .col-sm-4{
+            padding: 25px 0;
+        }
+
+        #title {
+            font-family: 'Cute Font', cursive;
+            font-size: 20px;
+
+        }
+ /*       #about {padding-top:50px;height:500px;color: #C2EAF3; background-color: #004771;
+            font-family: "Do Hyeon", sans-serif;
+            font-size: 20px;}
+        #history {padding-top:50px;height:500px;color: #C2EAF3; background-color: #B9BBBB;
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: 20px;
+        }
+        #services {padding-top:50px;height:500px;color: #C2EAF3; background-color: #AABACC;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 20px;
+
+        }
+        #contact {padding-top:50px;height:500px;color: #C2EAF3; background-color: #6F7985;
+            font-family: 'Gamja Flower', cursive;
+            font-size: 20px;
+            }
+    */    
+
+    </style>
+
+</head>
+<body class="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Navigation --------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">        
+                <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">회사소개</a></li>
+                <li><a href="#history" data-toggle="collapse" data-target=".navbar-collapse.in">회사연혁</a></li>
+                <li><a href="#map" data-toggle="collapse" data-target=".navbar-collapse.in">오시는 길</a></li>
+            </ul>
+        </div>    
+    </nav>
+    <!-- Navigation-->
+
+    <!--타이틀---------------------------------------------------------------------------------------------------------->
+    <div id= "title" class="jumbotron text-center">
+        <h1>TIS 정보기술교육센터</h1> 
+        <p>국비지원 IT 전문교육기관</p> 
+        <form class="form-inline" action="search.jsp">
+            <div class="input-group">
+              <input type="text" class="form-control" size="50" placeholder="검색어를 입력하세요." required>
+                <div class="input-group-btn">
+                     <button type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+      </form>
+    </div>
+    <!--타이틀-->
+
+
+    <!--회사소개------------------------------------------------------------------------------------------------------->
+    <div id="about" class="container-fluid">
+        <ul class="nav navbar-nav">
+        </ul>
+         <div class="row">
+
+            <div class ="col-sm-8"  style="float:right">
+                <h1> 회사소개 </h1>
+                <p>TIS 정보기술교육센터는 국비지원 IT전문교육기관입니다.</p>
+                <p>실무에서 사용할 수 있는 IT 교육을 위해 노력하고 있습니다.</p>        
+            </div>      
+
+            <div class ="col-sm-4">
+                <span class="glyphicon glyphicon-comment logo"></span>
+            </div>         
+         </div>
+    </div>
+    <!--회사소개-->
+
+    <!--회사연혁------------------------------------------------------------------------------------------------------->
+    <div id = "history" class="container-fluid bg-grey">
+        <div class="row">
+            
+            <div class="col-sm-8"  style="float:right">
+                <h1> 회사연혁 </h1>
+                <p>2013년, TIS정보시스템 법인설립</p>
+                <p>2016년, 고용노동부 구직자과정 승인</p>
+                <p>2019년, 고용노동부 우수훈련기관 선정</p>
+            </div>
+            
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-list logo"></span>
+            </div>
+        </div>
+    </div>
+    <!--회사연혁-->
+
+    <!--과목소개 ----------------------------------------------------------------------------------------------------->
+    <div id = "services" class="container-fluid text-center">
+        <h2>과목소개</h2>
+        <h4>주요 교육과목 안내</h4>
+        <div class = "row" style="padding-top : 10px">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-tasks logo-small" ></span> 
+                <h4>자바 스크립트</h4>
+                <p>객체지향언어</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo-small"></span>
+                <h4>HTML</h4>
+                <p>웹표준언어</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-copyright-mark logo-small"></span>
+                <h4>CSS</h4>
+                <p>Cascading Style Sheet</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-cloud logo-small"></span>
+                <h4>오라클</h4>
+                <p>관계형 데이터베이스</p>
+            </div>
+            <div class="col-sm-4">
+                <span class=" 
+                glyphicon glyphicon-registration-mark logo-small"></span>
+                <h4>R</h4>
+                <p>데이터분석언어</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-off logo-small"></span>
+                <h4>SPRNIG</h4>
+                <p>BackEnd Framework</p>
+            </div>
+        </div>
+    </div>
+    <!--과목소개-->
+
+    <!-- 카카오맵 ----------------------------------------------->
+
+    <div id="map" class="container-fluid text-center">
+        <h2 >오시는 길</h2>
+        <div id="kakaomap" style="width: 100%;height: 500px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=54d1035185160ad762b5b92381521bfb"></script>
+        <script> 
+            
+                var mapContainer = document.getElementById('kakaomap'), // 지도를 표시할 div 
+                mapOption = { 
+                        center: new daum.maps.LatLng(37.52523076966816, 126.89135601341609), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+
+                var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+                // 마커가 표시될 위치입니다 
+                var markerPosition  = new daum.maps.LatLng(37.52523076966816, 126.89135601341609); 
+
+                // 마커를 생성합니다
+                var marker = new daum.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+        </script>
+    </div>
+    <!-- 카카오맵.끝.-->
+
+    <!--Contact------------------------------------------------------------------------------->
+    <div id = "contact" class = "container-fluid bg-grey">
+        <h2 class="text-center">Contact</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p><span class="glyphicon glyphicon-map-marker"></span>서울특별시 영등포구 선유로 130 (지번 : 양평동 3가 5-4번지), 에이스하이테크시티3차 2층</p>
+                <p><span class="glyphicon glyphicon-phone"></span>수강&입학문의 : 02-2069-1931 | 업무문의 : 02-2069-1930 | 팩스 : 02-2069-1932</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> admin@tisedu.co.kr</p>
+            </div>
+            <div class="col-sm-7">
+                <div class = "row">
+                    <div class="col-sm-6">
+                        <input type="text" name="name" placeholder="name" class="form-control form-group">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="email" placeholder="email" class="form-control form-group">
+                    </div>
+                </div>
+                
+                <textarea rows="10" name="comment" placeholder="comment" class="form-control form-group"></textarea><br>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="submit" value="등록" class="btn btn-default pull-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Contact-->
+
+    <!--footer----------------------------------------------------------------------------->
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>TIS.EDU All rights reserved.</p>
+      </footer>
+
+    <!--footer-->
+
+    <!--smooth scroll ---------------------------------------------------------------------->
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        
+           // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+        
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+              });
+            } // End if
+          });
+        })
+        </script>
+
+    <!--smooth scroll-->
+
+
+</body>
+</html>
